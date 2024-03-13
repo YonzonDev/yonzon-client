@@ -84,7 +84,9 @@ const Invoice = () => {
   // Get total price
   const handleTotalPrice = () => {
     return selectedItems
-      .map((item) => (item.amount === undefined ? 1 : item.amount) * item.price)
+      .map(
+        (item) => (item.quantity === undefined ? 1 : item.quantity) * item.price
+      )
       .reduce((acc, price) => acc + price, 0);
   };
 
@@ -128,7 +130,13 @@ const Invoice = () => {
       // Item details
       doc.text(`x${item.quantity === undefined ? 1 : item.quantity}`, 15, y);
       doc.text(`${item.product}`, 90, y);
-      doc.text(`Php ${formatNumber(item.price)}`, 150, y);
+      doc.text(
+        `Php ${formatNumber(
+          item.price * (item.quantity === undefined ? 1 : item.quantity)
+        )}`,
+        150,
+        y
+      );
 
       y += 10; // Increase Y position for the next item
     });
