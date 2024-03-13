@@ -1,0 +1,15 @@
+.navbar-container {
+  background-color: #111111;
+
+  .navbar-brand {
+    color: #ffffff;
+  }
+
+  .navbar-image {
+    filter: saturate(0) brightness(1000%) hue-rotate(335deg);
+  }
+}
+
+.navbar-links .nav-link.active {
+  border-bottom: 1px solid #ffffff;
+}

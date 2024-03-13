@@ -1,0 +1,9 @@
+.settings-container {
+  margin-top: 5rem;
+
+  .settings-card {
+    border: 1px solid #ffffff;
+    background-color: #181818;
+    color: #ffffff;
+  }
+}

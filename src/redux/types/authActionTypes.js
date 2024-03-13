@@ -1,0 +1,1 @@
+export const SET_ACCESS_TYPE = "SET_ACCESS_TYPE";

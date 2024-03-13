@@ -1,0 +1,74 @@
+.inventory-container {
+  margin-top: 5rem;
+
+  .inventory-card {
+    border: 1px solid #ffffff;
+    background-color: #181818;
+    color: #ffffff;
+  }
+
+  .inventory-title {
+    font-weight: bold;
+  }
+
+  .inventory-form {
+    background-color: #202020;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+  }
+
+  .inventory-form:focus {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    border-color: #fa1e4e !important;
+    box-shadow: 0 0 5px #fa1e4e;
+  }
+
+  .yonzon-button {
+    background-color: #fa1e4e;
+    border: #fa1e4e;
+    transition: 0.3s ease-in-out;
+
+    &:hover,
+    &:after,
+    &:active,
+    &:focus,
+    &:disabled {
+      background-color: #970f2c !important;
+    }
+  }
+}
+
+.inventory-modal-container {
+  .inventory-form {
+    transition: 0.3s ease-in-out;
+  }
+
+  .inventory-form:focus {
+    border-color: #fa1e4e !important;
+    box-shadow: 0 0 5px #fa1e4e;
+  }
+
+  .yonzon-button {
+    background-color: #fa1e4e;
+    border: #fa1e4e;
+    transition: 0.3s ease-in-out;
+
+    &:hover,
+    &:after,
+    &:active,
+    &:focus,
+    &:disabled {
+      background-color: #970f2c !important;
+    }
+  }
+}
+
+.pagination-container {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}

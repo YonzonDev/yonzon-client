@@ -1,0 +1,31 @@
+.pagination > .page-link,
+.pagination > li > a {
+  background-color: #202020;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.pagination > .page-link:hover,
+.pagination > .page-link:focus,
+.pagination > li > a:active,
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  background-color: #fa1e4e;
+  color: #ffffff;
+  border-color: #fa1e4e;
+}
+
+.pagination > .page-item.active .page-link,
+.pagination > .active > a {
+  background-color: #fa1e4e;
+  color: #ffffff;
+  border-color: #fa1e4e;
+}
+
+.pagination > .page-item.active .page-link:hover,
+.pagination > .active > a:hover {
+  background-color: dark#fa1e4e;
+  border-color: dark#fa1e4e;
+}

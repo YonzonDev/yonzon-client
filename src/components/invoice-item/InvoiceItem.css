@@ -1,0 +1,12 @@
+.invoice-item {
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:after,
+  &:active,
+  &:focus,
+  &:disabled {
+    border-color: red !important;
+    box-shadow: 0 0 5px red;
+  }
+}
